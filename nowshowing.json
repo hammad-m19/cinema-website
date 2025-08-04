@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "year": 2019,
+    "poster": "images/avg.jpg"
+  },
+  {
+    "title": "Joker",
+    "genre": "Drama",
+    "year": 2019,
+    "poster": "images/joker.jpg"
+  },
+  {
+    "title": "The Batman",
+    "genre": "Action",
+    "year": 2022,
+    "poster": "images/batman.jpg"
+  },
+  {
+    "title": "Minions: The Rise of Gru",
+    "genre": "Comedy",
+    "year": 2022,
+    "poster": "images/minions.jpg"
+  }
+]

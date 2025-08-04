@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Ticket - CineScope</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CineScope 🎬</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="now-showing.html">Now Showing</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="text-align:center">Book Your Ticket</h2>
+    <div class="card" style="max-width:400px;margin:auto;text-align:center" id="booking-info">
+      
+    </div>
+
+    <form id="booking-form" class="contact-form" style="max-width:400px;margin:auto;margin-top:2em">
+      <label>Your Name:<br><input type="text" required></label><br>
+      <label>Number of Tickets:<br><input type="number" min="1" required></label><br>
+      <label>Select Time:<br>
+        <select required>
+          <option value="">Select Time</option>
+          <option>2:00 PM</option>
+          <option>5:00 PM</option>
+          <option>8:00 PM</option>
+        </select>
+      </label>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CineScope. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const movie = JSON.parse(localStorage.getItem('selectedMovie'));
+    const info = document.getElementById('booking-info');
+    if (movie) {
+      info.innerHTML = `
+        <img src="${movie.poster}" style="width:100%;border-radius:10px" />
+        <h3>${movie.title}</h3>
+        <p>Enjoy the show!</p>`;
+    } else {
+      info.innerHTML = "<p>No movie selected.</p>";
+    }
+
+    
+    document.getElementById("booking-form").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+      alert(`🎟️ Thank you! Your ticket for "${movie.title}" has been booked.`);
+      window.location.href = "now-showing.html"; 
+    });
+  </script>
+</body>
+</html>

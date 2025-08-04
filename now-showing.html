@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Now Showing - CineScope</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <h1>CineScope 🎬</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="now-showing.html">Now Showing</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main data-aos="fade-up">
+    <h2 style="text-align:center">Now Showing</h2>
+    <div class="grid" id="now-showing"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CineScope. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const nowShowingMovies = [
+      {
+        "title": "Avengers: Endgame",
+        "genre": "Action",
+        "year": 2019,
+        "poster": "images/avg.jpg"
+      },
+      {
+        "title": "Joker",
+        "genre": "Drama",
+        "year": 2019,
+        "poster": "images/joker.jpg"
+      },
+      {
+        "title": "The Batman",
+        "genre": "Action",
+        "year": 2022,
+        "poster": "images/batman.jpg"
+      },
+      {
+        "title": "Minions: The Rise of Gru",
+        "genre": "Comedy",
+        "year": 2022,
+        "poster": "images/minions.jpg"
+      }
+    ];
+
+    const container = document.getElementById("now-showing");
+    nowShowingMovies.forEach(movie => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `
+        <img src="${movie.poster}" alt="${movie.title}" />
+        <h3>${movie.title}</h3>
+        <p><strong>Genre:</strong> ${movie.genre}</p>
+        <p><strong>Year:</strong> ${movie.year}</p>
+        <button onclick="bookNow('${movie.title}', '${movie.poster}')">Book Ticket</button>
+      `;
+      container.appendChild(div);
+    });
+
+    function bookNow(title, poster) {
+      localStorage.setItem("selectedMovie", JSON.stringify({ title, poster }));
+      window.location.href = "book.html";
+    }
+  </script>
+</body>
+</html>

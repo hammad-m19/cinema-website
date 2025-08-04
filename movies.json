@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "year": 2010,
+    "poster": "images/inception.jpg"
+  },
+  {
+  "title": "Oppenheimer",
+  "genre": "Drama",
+  "year": 2023,
+  "poster": "images/oppenheimer.jpg"
+  },
+  {
+    "title": "The Conjuring",
+    "genre": "Horror",
+    "year": 2013,
+    "poster": "images/conjuring.jpg"
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Sci-Fi",
+    "year": 2014,
+    "poster": "images/interstellar.jpg"
+  },
+  {
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "year": 1999,
+    "poster": "images/matrix.jpg"
+  },
+  {
+    "title": "Joker",
+    "genre": "Drama",
+    "year": 2019,
+    "poster": "images/joker.jpg"
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "year": 2019,
+    "poster": "images/avg.jpg"
+  },
+  {
+    "title": "Toy Story 4",
+    "genre": "Comedy",
+    "year": 2019,
+    "poster": "images/toystory4.jpg"
+  },
+  {
+    "title": "The Batman",
+    "genre": "Action",
+    "year": 2022,
+    "poster": "images/batman.jpg"
+  },
+  {
+    "title": "Parasite",
+    "genre": "Drama",
+    "year": 2019,
+    "poster": "images/parasite.jpg"
+  },
+  {
+    "title": "Doctor Strange",
+    "genre": "Action",
+    "year": 2016,
+    "poster": "images/strange.jpg"
+  },
+  {
+    "title": "Minions: The Rise of Gru",
+    "genre": "Comedy",
+    "year": 2022,
+    "poster": "images/minions.jpg"
+  }
+]

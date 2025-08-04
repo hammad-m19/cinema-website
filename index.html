@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CineScope - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <h1>CineScope 🎬</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="now-showing.html">Now Showing</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filter-bar" data-aos="fade-down">
+      <input type="text" id="search" onkeyup="searchMovies()" placeholder="Search by title or genre..." />
+      <select id="genre" onchange="searchMovies()">
+        <option value="">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Horror">Horror</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+    </div>
+
+    <div class="grid" id="movie-list" data-aos="fade-up"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CineScope. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

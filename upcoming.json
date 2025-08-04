@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Deadpool 3",
+    "genre": "Action",
+    "year": 2025,
+    "poster": "images/deadpool3.jpg"
+  },
+  {
+    "title": "Inside Out 2",
+    "genre": "Comedy",
+    "year": 2027,
+    "poster": "images/insideout2.jpg"
+  },
+  {
+    "title": "The Marvels",
+    "genre": "Sci-Fi",
+    "year": 2025,
+    "poster": "images/marvels.jpg"
+  },
+  {
+    "title": "Kung Fu Panda 4",
+    "genre": "Comedy",
+    "year": 2026,
+    "poster": "images/kfp4.jpg"
+  }
+]
